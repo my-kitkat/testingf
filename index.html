@@ -333,7 +333,7 @@ seek.addEventListener('pointerdown',function(){dragging=true});
 seek.addEventListener('pointerup',function(){dragging=false});
 seek.addEventListener('input',function(){if(au.duration){au.currentTime=seek.value/1000*au.duration;tcur.textContent=fmt(au.currentTime)}});
 pb2.onclick=function(){if(custom){au.volume=1;au.paused?au.play():au.pause()}else playMsg()};
-var MSG='Remember Suhani gave you a box?';
+var MSG='Remember Suhani gave you a packet?';
 function unlock(){unlocked=true;
  var tzt=document.querySelector('.tzt'),tw=document.createElement('div');
  au.src='143.mp3';custom=true;au.onerror=function(){custom=false};
