@@ -298,7 +298,7 @@ function buildStory(){var L=document.getElementById('lad');
  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.25});
  L.querySelectorAll('.step').forEach(function(x){io.observe(x)})}
 // live counter
-var T0=new Date(2025,10,17,11,7).getTime();
+var T0=new Date(2025,10,17,0,0,0).getTime();
 function tick(){var s=Math.floor(Math.max(0,Date.now()-T0)/1000),v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];['cd','ch','cm','cs'].forEach(function(id,i){document.getElementById(id).textContent=v[i]})}
 tick();setInterval(tick,1000);
 // soft background music (generated, no files)
